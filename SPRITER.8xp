@@ -12,32 +12,31 @@ det(13,1,DarkGray,MedGray,106,113
 det(13,1,DarkGray,MedGray,106,133
 0->O
 Ans->P
-While 1
-	det(73
-	Ans->K
-	If K=4:Then
-		If O:Then
-			O-1->O
-		Else
-			2->O
-		End
-	End
-	If K=1:Then
-		If O=2:Then
-			0->O
-		Else
-			O+1->O
-		End
-	End
-	If K=15:det(80,60000
-	If K=9 or K=54:det(79,41
-	If O!=P:Then
-		det(15,0,104,91+20P,112,18
-		det(15,0,104,91+20O,112,18
-		O->P
-		Wait .1
+det(73
+Ans->K
+If K=4:Then
+	If O:Then
+		O-1->O
+	Else
+		2->O
 	End
 End
+If K=1:Then
+	If O=2:Then
+		0->O
+		Else
+		O+1->O
+	End
+End
+If K=15:det(80,60000
+If K=9 or K=54:det(79,40
+If O!=P:Then
+	det(15,0,104,91+20P,112,18
+	det(15,0,104,91+20O,112,18
+	O->P
+	Wait .1
+End
+det(79,15
 If O=2:Then
 	det(15,DarkGray,48,180,224,54
 	det(15,MedGray,50,182,220,50
@@ -45,7 +44,7 @@ If O=2:Then
 	det(13,1,DarkGray,MedGray,88,184
 	"A small project by->Str9
 	det(13,1,DarkGray,MedGray,52,200
-	"TIny-Hacker->Str9
+	"TIny_Hacker->Str9
 	det(13,1,DarkGray,MedGray,94,216
 	Wait .5
 	0->K
@@ -59,9 +58,8 @@ End
 If O=2:det(79,15
 1->W
 Ans->L
-Ans->Q
-det(16,MedGray
 O->Q
+det(16,MedGray
 det(15,DarkGray,90,190,140,42
 det(15,MedGray,92,192,136,18
 det(15,MedGray,92,212,136,18
@@ -101,7 +99,7 @@ While 1
 		End
 	End
 	If K=15:det(80,60000
-	If K=9 or K=54:det(79,118
+	If K=9 or K=54:det(79,116
 	If L!=iPart(P) or W!=fPart(P)1000:Then
 		L->P
 		P+0.001W->P
@@ -137,11 +135,15 @@ End
 1.1->R
 0->X
 0->Y
+0->U
+0->V
 1->S
 If not(Q:0->C
 If Q:Black->C
 While 1
 	det(73->K
+	X->U
+	Y->V
 	If K=1 or K=5 or K=6:Then
 		If Y<L-1:Then
 			Y+1->Y
@@ -167,11 +169,9 @@ While 1
 		End
 	End
 	If K=15:det(80,60000
-	If not(Q:Then
-		If K=10 and W(S+1)<=128 and L(S+1)<=128:S+1->S
-		If K=11 and S>1:S-1->S
-		If K=10 or K=11:1.1->R
-	End
+	If K=10 and W(S+1)<=128 and L(S+1)<=128:S+1->S
+	If K=11 and S>1:S-1->S
+	If K=10 or K=11:1.1->R
 	If K=9 or K=54:Then
 		If not(Q:Then
 			det(48,C
@@ -189,7 +189,7 @@ While 1
 			det(44,1,Y*W+X,theta
 		End
 	End
-If K=52:Then:End
+	If K=52:Then:End
 	If K=50:Then
 		If not(Q:Then
 			det(16,MedGray
@@ -295,23 +295,43 @@ If K=52:Then:End
 			"Color->Str9
 			det(13,1,DarkGray,MedGray,210,216
 			det(60,DarkGray,160-WS/2,110-LS/2,WS+2,LS+2
+			"[+]->Str9
+			det(13,0,DarkGray,MedGray,295,99
+			"[-]->Str9
+			det(13,0,DarkGray,MedGray,295,114
 			If not(Q:Then
-				"[+]->Str9
-				det(13,0,DarkGray,MedGray,295,99
-				"[-]->Str9
-				det(13,0,DarkGray,MedGray,295,114
+				det(56,161-WS/2,111-LS/2,W,L,S,S,1
+			Else
+				det(15,MedGray,161-W/2,111-L/2,W,L
+				If S>1:Then
+					1->I
+					For(B,111-LS/2,110+LS/2,S
+						For(A,161-WS/2,160+WS/2,S
+							sub(Str1,I,1
+							det(47
+							det(15,9+theta,A,B,S,S
+							I+1->I
+						End
+					End
+				Else
+					Str1->Str9
+					det(9,W,134-W/2,65-L/2
+				End
 			End
 		End
-		0->R
 		If not(Q:Then
-			det(56,160-WS/2+1,110-LS/2+1,W,L,S,S,1
+			sub(Str1,2(VW+U)+1,2
+			det(47
+			det(15,theta,theta,161-WS/2+US,111-LS/2+VS,S,S
+			det(15,C,C,161-WS/2+XS,111-LS/2+YS,S,S
 		Else
-			Str1->Str9
-			det(15,MedGray,160-W/2+1,110-L/2+1,W,L
-			det(9,W,132-W/2+2,64-L/2+1
+			sub(Str1,VW+U+1,1
+			det(47
+			theta+13not(theta->theta
+			det(15,9+theta,161-WS/2+US,111-LS/2+VS,S,S
+			det(15,C,161-WS/2+XS,111-LS/2+YS,S,S
 		End
-		If not(Q:det(15,C,C,160-WS/2+1+XS,110-LS/2+1+YS,S,S
-		If Q:det(18,C,160-W/2+1+X,110-L/2+1+Y
+		0->R
 	End
 End
 ClrHome
