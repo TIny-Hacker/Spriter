@@ -10,7 +10,7 @@ program!
 Installation
 --------------------
 
-1. Download the "SPRITER.8xp" from the latest release and send it to your
+1. Download "SPRITER.8xp" from the latest release and send it to your
    calculator. You can find it here:
    https://github.com/TIny-Hacker/Spriter/releases/latest
 2. Download and install the Celtic CE library, following the instructions here:
