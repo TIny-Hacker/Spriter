@@ -8,7 +8,7 @@ Spriter is a simple, minimalistic sprite and icon creator for the TI-84 Plus CE 
 
 ### Installation
 
-1. Download the **SPRITER.8xp** from the [latest release](https://github.com/TIny-Hacker/Spriter/releases/latest) and send it to your calculator.
+1. Download **SPRITER.8xp** from the [latest release](https://github.com/TIny-Hacker/Spriter/releases/latest) and send it to your calculator.
 2. Download and install the Celtic CE library, following the instructions [here](https://roccoloxprograms.github.io/CelticCE/installation.html). You may need the [arTIfiCE](https://yvantt.github.io/arTIfiCE/) jailbreak if your calculator is on OS 5.5+.
 3. Run **prgmSPRITER** from the OS program menu or a shell of your choice.
 
