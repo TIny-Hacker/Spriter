@@ -1,5 +1,9 @@
 :"Spriter v1.0
 :"EEDDEEDDEEDDEEDDEEEEEEEEEEEEEEEDDEE77EEEEEEEEEEEDE777FEEEEEEEEEEEE77F66EEEEEEEEDEEEF6666EEEEEEEDDEEE66666EEEEEEEDEEEE66666EEEEEEEEEEEE66666EEEEDEEEEEEE66666EEEDDEEEEEEE66666EEEDEEEEEEEE66663EEEEEEEEEEEE6633EDEEEEEEEEEEE333EDDEEEEEEEEEEEEEEEDDEEDDEEDDEEDDEE
+If 90>det([[20:Then
+	Disp "Get Celtic CE to run this:","bit.ly/CelticCE
+	Pause :Return
+End
 det(16,MedGray
 det(15,DarkGray,102,89,116,62
 det(15,MedGray,104,91,112,18
@@ -29,15 +33,15 @@ If K=1:Then
 		O+1->O
 	End
 End
-If K=15:det(79,485
-If K=9 or K=54:det(79,41
+If K=15:det(79,505
+If K=9 or K=54:det(79,45
 If O!=P:Then
 	det(15,0,104,91+20P,112,18
 	det(15,0,104,91+20O,112,18
 	O->P
 	Wait .1
 End
-det(79,17
+det(79,21
 If O=2:Then
 	det(15,DarkGray,48,180,224,54
 	det(15,MedGray,50,182,220,50
@@ -56,7 +60,7 @@ If O=2:Then
 	0->K
 	Wait .5
 End
-If O=2:det(79,17
+If O=2:det(79,21
 1->W
 Ans->L
 O->Q
@@ -99,8 +103,8 @@ While 1
 			1->W
 		End
 	End
-	If K=15:det(79,485
-	If K=9 or K=54:det(79,117
+	If K=15:det(79,505
+	If K=9 or K=54:det(79,121
 	If L!=iPart(P) or W!=fPart(P)1000:Then
 		L->P
 		P+0.001W->P
@@ -169,10 +173,25 @@ While 1
 			1->R
 		End
 	End
-	If K=15:det(79,485
+	If K=15:det(79,505
 	If K=10 and W(S+1)<=128 and L(S+1)<=128:S+1->S
 	If K=11 and S>1:S-1->S
 	If K=10 or K=11:1.1->R
+	If K=48:Then
+		If not(Q:Then
+			"FF
+			det(42
+			Str9
+			det(47
+			det(49,1,(Y*W+X)2,theta
+		Else
+			"0
+			det(42
+			Str9
+			det(47
+			det(44,1,Y*W+X,theta
+		End
+	End
 	If K=9 or K=54:Then
 		If not(Q:Then
 			det(48,C
@@ -205,9 +224,10 @@ While 1
 			1-O->O
 			det(15,0,122,101,76,18
 			det(15,0,122,121,76,18
+			Wait .1
 		End
-		If K=15:det(79,339
-		If K!=9 and K!=54:det(79,203
+		If K=15:det(79,359
+		If K!=9 and K!=54:det(79,222
 		If not(O:Then
 			det(15,DarkGray,79,99,162,42
 			det(15,MedGray,81,101,158,18
@@ -239,14 +259,14 @@ While 1
 				"< "+sub("Str0Str1Str2Str3Str4Str5Str6Str7Str8Str9",E+1,1)+" >->Str9
 				det(13,1,DarkGray,MedGray,113,123
 			End
-			If K!=9 and K!=54 and K!=15:det(79,219
+			If K!=9 and K!=54 and K!=15:det(79,239
 			If K!=15:Then
 				det(15,MedGray,81,101,158,18
 				"Saved!->Str9
 				det(13,1,DarkGray,MedGray,124,103
 				Wait .1
 				det(73->K
-				If K!=9 and K!=54 and K!=15:det(79,248
+				If K!=9 and K!=54 and K!=15:det(79,268
 			End
 		Else
 			det(15,DarkGray,73,99,174,42
@@ -280,7 +300,7 @@ While 1
 				det(13,1,DarkGray,MedGray,77,123
 				det(66,1,DarkGray,MedGray,233,123,62
 			End
-			If K!=9 and K!=54 and K!=15:det(79,261
+			If K!=9 and K!=54 and K!=15:det(79,281
 			If K!=15:Then
 				If not(Q) or W!=16 or L!=16:Then
 					det(15,DarkGray,18,85,284,70
@@ -295,7 +315,7 @@ While 1
 					det(13,1,DarkGray,MedGray,22,137
 					Wait .1
 					det(73->K
-					If K!=9 and K!=54 and K!=15:det(79,297
+					If K!=9 and K!=54 and K!=15:det(79,317
 				Else
 					sub(Str8,O,inString(Str8," ",O)-O->Str0
 					det(27
@@ -310,7 +330,7 @@ While 1
 						det(13,1,DarkGray,MedGray,46,128
 						Wait .1
 						det(73->K
-						If K!=9 and K!=54 and K!=15:det(79,312
+						If K!=9 and K!=54 and K!=15:det(79,332
 					Else
 						det(8
 						0->N
@@ -331,7 +351,7 @@ While 1
 						det(13,1,DarkGray,MedGray,124,103
 						Wait .1
 						det(73->K
-						If K!=9 and K!=54 and K!=15:det(79,333
+						If K!=9 and K!=54 and K!=15:det(79,353
 					End
 				End
 			End
@@ -482,6 +502,5 @@ While 1
 		0->R
 	End
 End
-ClrHome
 det(76,E
 det(82

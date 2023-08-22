@@ -36,7 +36,8 @@ confirm. It can take longer to initialize the sprite depending on how large you
 select.
 
 Now you're in the editor! You can use the [2nd] or [enter] keys to place a
-pixel, and the arrow keys to move your cursor around. To change colors, press
+pixel, and the arrow keys to move your cursor around. If you'd like to erase a
+pixel, press the [alpha] key. In order to change the color you're using, press
 [f4], which will open the color selecting menu. If you'd like to zoom in or out
 while editing, you can use the [+] and [-] keys.
 
