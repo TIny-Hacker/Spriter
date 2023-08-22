@@ -25,19 +25,19 @@ End
 If K=1:Then
 	If O=2:Then
 		0->O
-		Else
+	Else
 		O+1->O
 	End
 End
-If K=15:det(79,392 // ClrHome
-If K=9 or K=54:det(79,41 // If O=2
+If K=15:det(79,485
+If K=9 or K=54:det(79,41
 If O!=P:Then
 	det(15,0,104,91+20P,112,18
 	det(15,0,104,91+20O,112,18
 	O->P
 	Wait .1
 End
-det(79,17 // det(73
+det(79,17
 If O=2:Then
 	det(15,DarkGray,48,180,224,54
 	det(15,MedGray,50,182,220,50
@@ -56,7 +56,7 @@ If O=2:Then
 	0->K
 	Wait .5
 End
-If O=2:det(79,17 // det(73
+If O=2:det(79,17
 1->W
 Ans->L
 O->Q
@@ -99,8 +99,8 @@ While 1
 			1->W
 		End
 	End
-	If K=15:det(79,392 // ClrHome
-	If K=9 or K=54:det(79,117 // While det(73):End
+	If K=15:det(79,485
+	If K=9 or K=54:det(79,117
 	If L!=iPart(P) or W!=fPart(P)1000:Then
 		L->P
 		P+0.001W->P
@@ -169,7 +169,7 @@ While 1
 			1->R
 		End
 	End
-	If K=15:det(79,392 // ClrHome
+	If K=15:det(79,485
 	If K=10 and W(S+1)<=128 and L(S+1)<=128:S+1->S
 	If K=11 and S>1:S-1->S
 	If K=10 or K=11:1.1->R
@@ -206,8 +206,8 @@ While 1
 			det(15,0,122,101,76,18
 			det(15,0,122,121,76,18
 		End
-		If K=15:det(79,246 // 1.1->R
-		If K!=9 and K!=54:det(79,203 // det(73->K
+		If K=15:det(79,339
+		If K!=9 and K!=54:det(79,203
 		If not(O:Then
 			det(15,DarkGray,79,99,162,42
 			det(15,MedGray,81,101,158,18
@@ -239,9 +239,102 @@ While 1
 				"< "+sub("Str0Str1Str2Str3Str4Str5Str6Str7Str8Str9",E+1,1)+" >->Str9
 				det(13,1,DarkGray,MedGray,113,123
 			End
-			If K!=9 and K!=54 and K!=15:det(79,219 // det(73->K
+			If K!=9 and K!=54 and K!=15:det(79,219
+			If K!=15:Then
+				det(15,MedGray,81,101,158,18
+				"Saved!->Str9
+				det(13,1,DarkGray,MedGray,124,103
+				Wait .1
+				det(73->K
+				If K!=9 and K!=54 and K!=15:det(79,248
+			End
 		Else
-
+			det(15,DarkGray,73,99,174,42
+			det(15,MedGray,75,101,170,18
+			det(15,MedGray,75,121,170,18
+			"Add to:"->Str9
+			det(13,1,DarkGray,MedGray,121,103
+			0:det(33,0
+			Str9->Str8
+			1->R
+			1->O
+			det(73->K
+			If K=2:Then
+				1->R
+				If O=1:length(Str8)+1->O
+				O-2->O
+				While O!=1 and sub(Str8,O,1)!=" 
+					O-1->O
+				End
+				If O>1:O+1->O
+			End
+			If K=3:Then
+				1->R
+				1+inString(Str8," ",O->O
+				If not(inString(Str8," ",O:1->O
+			End
+			If R:Then
+				0->R
+				det(15,MedGray,75,121,170,18
+				"<prgm"+sub(Str8,O,inString(Str8," ",O)-O->Str9
+				det(13,1,DarkGray,MedGray,77,123
+				det(66,1,DarkGray,MedGray,233,123,62
+			End
+			If K!=9 and K!=54 and K!=15:det(79,261
+			If K!=15:Then
+				If not(Q) or W!=16 or L!=16:Then
+					det(15,DarkGray,18,85,284,70
+					det(15,MedGray,20,87,280,66
+					"Error:->Str9
+					det(13,1,DarkGray,MedGray,22,89
+					"The icon is invalid.->Str9
+					det(13,1,DarkGray,MedGray,22,105
+					"Ensure it uses->Str9
+					det(13,1,DarkGray,MedGray,22,121
+					"BufSprite and is 16xmark16.->Str9
+					det(13,1,DarkGray,MedGray,22,137
+					Wait .1
+					det(73->K
+					If K!=9 and K!=54 and K!=15:det(79,297
+				Else
+					sub(Str8,O,inString(Str8," ",O)-O->Str0
+					det(27
+					If theta!=2:Then
+						det(15,DarkGray,42,92,236,56
+						det(15,MedGray,44,94,232,52
+						"Error:->Str9
+						det(13,1,DarkGray,MedGray,46,96
+						"You need to select->Str9
+						det(13,1,DarkGray,MedGray,46,112
+						"a TI-BASIC program.->Str9
+						det(13,1,DarkGray,MedGray,46,128
+						Wait .1
+						det(73->K
+						If K!=9 and K!=54 and K!=15:det(79,312
+					Else
+						det(8
+						0->N
+						If sub(Str9,1,1)="A":Then
+							det(5
+							1->N
+						End
+						det(3
+						sub(Str9,2,1)+Str1->Str9
+						1
+						det(2
+						":DCS->Str9
+						1
+						det(2
+						If N:det(5
+						det(15,MedGray,75,101,170,18
+						"Saved!->Str9
+						det(13,1,DarkGray,MedGray,124,103
+						Wait .1
+						det(73->K
+						If K!=9 and K!=54 and K!=15:det(79,333
+					End
+				End
+			End
 		End
 		1.1->R
 	End
