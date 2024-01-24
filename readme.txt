@@ -1,4 +1,4 @@
-Spriter v1.0
+Spriter v1.5
 --------------------
 
 Spriter is a simple, minimalistic sprite and icon creator for the TI-84 Plus CE
@@ -42,9 +42,11 @@ pixel, press the [alpha] key. In order to change the color you're using, press
 while editing, you can use the [+] and [-] keys.
 
 To save your sprite, press [f2]. This will open a menu where you can choose to
-either export to a string or as the icon to a program. You can pick through the
+either export to a string (Str5) or as the icon to a program. You can pick through the
 options using the arrow keys to move and [2nd] or [enter] to confirm. After
 saving, the program will not close, so you can continue editing! However, make
 sure to save any changes before you do decide to exit the program.
+
+To load a sprite, press [f3]. It will load from the same string used for saving, Str5.
 
 Happy spriting!

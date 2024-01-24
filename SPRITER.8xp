@@ -1,4 +1,4 @@
-:"Spriter v1.0
+:"Spriter v1.5
 :"EEDDEEDDEEDDEEDDEEEEEEEEEEEEEEEDDEE77EEEEEEEEEEEDE777FEEEEEEEEEEEE77F66EEEEEEEEDEEEF6666EEEEEEEDDEEE66666EEEEEEEDEEEE66666EEEEEEEEEEEE66666EEEEDEEEEEEE66666EEEDDEEEEEEE66666EEEDEEEEEEEE66663EEEEEEEEEEEE6633EDEEEEEEEEEEE333EDDEEEEEEEEEEEEEEEDDEEDDEEDDEEDDEE
 If 90>det([[20:Then
 	Disp "Get Celtic CE to run this:","bit.ly/CelticCE
@@ -29,11 +29,11 @@ End
 If K=1:Then
 	If O=2:Then
 		0->O
-	Else
+		Else
 		O+1->O
 	End
 End
-If K=15:det(79,505
+If K=15:det(79,478
 If K=9 or K=54:det(79,45
 If O!=P:Then
 	det(15,0,104,91+20P,112,18
@@ -45,7 +45,7 @@ det(79,21
 If O=2:Then
 	det(15,DarkGray,48,180,224,54
 	det(15,MedGray,50,182,220,50
-	"Spriter v1.0->Str9
+	"Spriter v1.5->Str9
 	det(13,1,DarkGray,MedGray,88,184
 	"A small project by->Str9
 	det(13,1,DarkGray,MedGray,52,200
@@ -103,7 +103,7 @@ While 1
 			1->W
 		End
 	End
-	If K=15:det(79,505
+	If K=15:det(79,478
 	If K=9 or K=54:det(79,121
 	If L!=iPart(P) or W!=fPart(P)1000:Then
 		L->P
@@ -173,7 +173,7 @@ While 1
 			1->R
 		End
 	End
-	If K=15:det(79,505
+	If K=15:det(79,478
 	If K=10 and W(S+1)<=128 and L(S+1)<=128:S+1->S
 	If K=11 and S>1:S-1->S
 	If K=10 or K=11:1.1->R
@@ -210,6 +210,7 @@ While 1
 		End
 	End
 	If K=52:Then
+		0->G
 		det(15,DarkGray,120,99,80,42
 		det(15,MedGray,122,101,76,18
 		det(15,MedGray,122,121,76,18
@@ -226,48 +227,14 @@ While 1
 			det(15,0,122,121,76,18
 			Wait .1
 		End
-		If K=15:det(79,359
-		If K!=9 and K!=54:det(79,222
-		If not(O:Then
-			det(15,DarkGray,79,99,162,42
+		If K=15:det(79,324
+		If K!=9 and K!=54:det(79,223
+			Str1->Str5
 			det(15,MedGray,81,101,158,18
-			det(15,MedGray,81,121,158,18
-			"Which string?->Str9
-			det(13,1,DarkGray,MedGray,83,103
-			0->E
-			1->R
-			det(73->K
-			If K=2:Then
-				If E:Then
-					E-1->E
-				Else
-					9->E
-				End
-				1->R
-			End
-			If K=3:Then
-				If E<9:Then
-					E+1->E
-				Else
-					0->E
-				End
-				1->R
-			End
-			If K=9 or K=54:det(75,1
-			If R:Then
-				0->R
-				"< "+sub("Str0Str1Str2Str3Str4Str5Str6Str7Str8Str9",E+1,1)+" >->Str9
-				det(13,1,DarkGray,MedGray,113,123
-			End
-			If K!=9 and K!=54 and K!=15:det(79,239
-			If K!=15:Then
-				det(15,MedGray,81,101,158,18
-				"Saved!->Str9
-				det(13,1,DarkGray,MedGray,124,103
-				Wait .1
-				det(73->K
-				If K!=9 and K!=54 and K!=15:det(79,268
-			End
+			"Saved!->Str9
+			det(13,1,DarkGray,MedGray,124,103
+			Wait .1
+			While K!=9 and K!=54 and K!=15:det(73->K:End
 		Else
 			det(15,DarkGray,73,99,174,42
 			det(15,MedGray,75,101,170,18
@@ -300,7 +267,7 @@ While 1
 				det(13,1,DarkGray,MedGray,77,123
 				det(66,1,DarkGray,MedGray,233,123,62
 			End
-			If K!=9 and K!=54 and K!=15:det(79,281
+			If K!=9 and K!=54 and K!=15:det(79,249
 			If K!=15:Then
 				If not(Q) or W!=16 or L!=16:Then
 					det(15,DarkGray,18,85,284,70
@@ -314,8 +281,7 @@ While 1
 					"BufSprite and is 16xmark16.->Str9
 					det(13,1,DarkGray,MedGray,22,137
 					Wait .1
-					det(73->K
-					If K!=9 and K!=54 and K!=15:det(79,317
+					While K!=9 and K!=54 and K!=15:det(73->K:End
 				Else
 					sub(Str8,O,inString(Str8," ",O)-O->Str0
 					det(27
@@ -329,8 +295,7 @@ While 1
 						"a TI-BASIC program.->Str9
 						det(13,1,DarkGray,MedGray,46,128
 						Wait .1
-						det(73->K
-						If K!=9 and K!=54 and K!=15:det(79,332
+						While K!=9 and K!=54 and K!=15:det(73->K:End
 					Else
 						det(8
 						0->N
@@ -350,11 +315,18 @@ While 1
 						"Saved!->Str9
 						det(13,1,DarkGray,MedGray,124,103
 						Wait .1
-						det(73->K
-						If K!=9 and K!=54 and K!=15:det(79,353
+						While K!=9 and K!=54 and K!=15:det(73->K:End
 					End
 				End
 			End
+		End
+		1.1->R
+	End
+	If K=51:Then
+		If length(Str5)<length(Str1:Then
+			Str5+sub(Str1,length(Str5)+1,length(Str1)-length(Str5->Str1
+		Else
+			sub(Str5,1,length(Str1->Str1
 		End
 		1.1->R
 	End
@@ -454,19 +426,17 @@ While 1
 	If R:Then
 		If R>1:Then
 			det(16,MedGray
-			det(15,DarkGray,52,212,56,22
-			det(15,MedGray,54,214,52,18
-			det(15,DarkGray,206,212,68,22
-			det(15,MedGray,208,214,64,18
-			"Save->Str9
-			det(13,1,DarkGray,MedGray,56,216
-			"Color->Str9
-			det(13,1,DarkGray,MedGray,210,216
+			det(15,DarkGray,52,212,56,22:det(15,MedGray,54,214,52,18
+			det(15,DarkGray,206,212,68,22:det(15,MedGray,208,214,64,18
+			det(15,DarkGray,132,212,56,22:det(15,MedGray,134,214,52,18
+			"Save->Str9:det(13,1,DarkGray,MedGray,56,216
+			"Color->Str9:det(13,1,DarkGray,MedGray,210,216
+			"Load->Str9:det(13,1,DarkGray,MedGray,136,216
 			det(60,DarkGray,160-WS/2,110-LS/2,WS+2,LS+2
-			"[+]->Str9
-			det(13,0,DarkGray,MedGray,295,99
-			"[-]->Str9
-			det(13,0,DarkGray,MedGray,295,114
+			"[+]->Str9:det(13,0,DarkGray-13(SW>=128),MedGray,265,92
+			"[-]->Str9:det(13,0,DarkGray-13(S=1),MedGray,265,122
+			"Scale: "+toString(S->Str9
+			det(13,0,DarkGray,MedGray,250,107
 			If not(Q:Then
 				det(56,161-WS/2,111-LS/2,W,L,S,S,1
 			Else
@@ -499,6 +469,8 @@ While 1
 			det(15,9+theta,161-WS/2+US,111-LS/2+VS,S,S
 			det(15,C,161-WS/2+XS,111-LS/2+YS,S,S
 		End
+		If S>2
+		det(60,Red+9(not(det(19,161-WS/2+XS,111-LS/2+YS)) and theta=248),161-WS/2+XS,111-LS/2+YS,S,S
 		0->R
 	End
 End
